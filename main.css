@@ -7,11 +7,6 @@ body    {
     background: url(p1.png) repeat;
 
 }
-
-img {
-  width: 200px;
-}
-
 #wrapper {
     background-color: #FFFFFF;
 
@@ -43,14 +38,11 @@ img {
     margin-bottom: -7px;
 }
 
+
+
 #here img {
     max-width: 100%;
 }
-
-#center {
-   text-align: center;
-}
-
 h1, h2 {
     color: #3399CC;
     font-style: normal;
