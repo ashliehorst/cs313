@@ -1,3 +1,8 @@
+<?php
+header("Location: http://php-ashliehorst.rhcloud.com/survey.php");
+exit;
+?>
+
 <!DOCTYPE html>
 
 <html>
