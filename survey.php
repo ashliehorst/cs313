@@ -65,16 +65,28 @@
 	}
 
 		echo "<h2> <b>Zelda Results</b> </h2>";
-		echo "Link $countLink\n Zelda $countZelda\n Support $countSup\n Villain $countVil";
+		echo "Link $countLink
+			Zelda $countZelda
+			Support $countSup
+			Villain $countVil";
 
 		echo "<h2> <b>Ice Cream Results</b> </h2>";
-		echo "Fruit $countFru Chocolate $countChoc Vanilla $countVan Mint $countMin";
+		echo "Fruit $countFru 
+			Chocolate $countChoc 
+			Vanilla $countVan
+			Mint $countMin";
 
 		echo "<h2> <b>Vacation Results</b> </h2>";
-		echo "Forest $countFor Beach $countBea Mountains $countMou Desert $countDes";
+		echo "Forest $countFor 
+			Beach $countBea 
+			Mountains $countMou 
+			Desert $countDes";
 
 		echo "<h2> <b>Music Results</b> </h2>";
-		echo "Pop $countPop Rock $countRoc Classical $countCla Techno $countTec";
+		echo "Pop $countPop 
+			Rock $countRoc 
+			Classical $countCla 
+			Techno $countTec";
 
 
 	  // Zelda
