@@ -2,7 +2,7 @@
 
 	session_start();
 
-	$_SESSION["still"] = "true";	
+	$_SESSION["tester"] = "here";	
 
 ?>
 
