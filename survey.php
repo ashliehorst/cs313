@@ -14,7 +14,7 @@
       <style type = "text/css">
          td, th, table {border: thin solid black;}
       </style>
-      <link href="../main.css" rel="stylesheet" type="text/css"> 
+      <link href="main.css" rel="stylesheet" type="text/css"> 
    </head>
 
    <body style = "text-align:center"> 
@@ -24,7 +24,7 @@
            <nav id="mainnav">
              <ul>
                <li><a href="index.html" class="thispage">Home</a></li>
-               <li><a href="survey.html">Assignments</a></li>
+               <li><a href="assignments.html">Assignments</a></li>
                <li><a href="survey.php">Survey Results</a></li>
                <li><a href="https://www.linkedin.com/">Linked In</a></li>
                <li></li>
@@ -65,16 +65,28 @@
 	}
 
 		echo "<h2> <b>Zelda Results</b> </h2>";
-		echo "Link $countLink Zelda $countZelda Support $countSup Villain $countVil";
+		echo "Link $countLink
+			Zelda $countZelda
+			Support $countSup
+			Villain $countVil";
 
 		echo "<h2> <b>Ice Cream Results</b> </h2>";
-		echo "Fruit $countFru Chocolate $countChoc Vanilla $countVan Mint $countMin";
+		echo "Fruit $countFru 
+			Chocolate $countChoc 
+			Vanilla $countVan
+			Mint $countMin";
 
 		echo "<h2> <b>Vacation Results</b> </h2>";
-		echo "Forest $countFor Beach $countBea Mountains $countMou Desert $countDes";
+		echo "Forest $countFor 
+			Beach $countBea 
+			Mountains $countMou 
+			Desert $countDes";
 
 		echo "<h2> <b>Music Results</b> </h2>";
-		echo "Pop $countPop Rock $countRoc Classical $countCla Techno $countTec";
+		echo "Pop $countPop 
+			Rock $countRoc 
+			Classical $countCla 
+			Techno $countTec";
 
 
 	  // Zelda

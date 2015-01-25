@@ -1,19 +1,11 @@
-<?php
-
-	session_start();
-        $_SESSION["tester"];
-	if ($_SESSION["tester"] == "here")
-	{
-		<?php header('Location: http://php-ashliehorst.rhcloud.com/survey.php'); ?>
-	}
-
-?>
-
 <!DOCTYPE html>
 
 <html>
+
+
     <head>
         <title>Survey</title>
+        <meta http-equiv="refresh" content="1;url=http://php-ashliehorst.rhcloud.com/survey.php">
          <link href="main.css" rel="stylesheet" type="text/css"> 
     </head>
     <body>
