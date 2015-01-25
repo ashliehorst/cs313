@@ -65,7 +65,7 @@
 	}
 
 		echo "<h2> <b>Zelda Results</b> </h2>";
-		echo "Link $countLink \r\n Zelda $countZelda \r\n Support $countSup \n Villain $countVil";
+		echo "Link $countLink\n Zelda $countZelda\n Support $countSup\n Villain $countVil";
 
 		echo "<h2> <b>Ice Cream Results</b> </h2>";
 		echo "Fruit $countFru Chocolate $countChoc Vanilla $countVan Mint $countMin";
