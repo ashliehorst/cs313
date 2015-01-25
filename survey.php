@@ -65,7 +65,7 @@
 	}
 
 		echo "<h2> <b>Zelda Results</b> </h2>";
-		echo "Link $countLink
+		echo "Link $countLink <br/>
 			Zelda $countZelda
 			Support $countSup
 			Villain $countVil";
