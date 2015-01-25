@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
 <?php
 
 	session_start();
@@ -12,6 +8,12 @@
 	}
 
 ?>
+
+<!DOCTYPE html>
+
+<html>
+
+
     <head>
         <title>Survey</title>
          <link href="main.css" rel="stylesheet" type="text/css"> 
