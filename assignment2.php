@@ -12,7 +12,6 @@ exit;
 
     <head>
         <title>Survey</title>
-        <meta http-equiv="refresh" content="1;url=http://php-ashliehorst.rhcloud.com/survey.php">
          <link href="main.css" rel="stylesheet" type="text/css"> 
     </head>
     <body>
