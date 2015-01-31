@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_SESSION["tester"] == "here") {
 header("Location: http://php-ashliehorst.rhcloud.com/survey.php");
 exit;
