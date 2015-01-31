@@ -1,9 +1,6 @@
 <?php
-
 	session_start();
-
-	$_SESSION["tester"] = "here";	
-
+	$_SESSION["tester"] = "here1";	
 ?>
 
 <!DOCTYPE html>
