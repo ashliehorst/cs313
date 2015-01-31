@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION["tester"] == "here") {
+if ($_SESSION["tester"] == "here1") {
 header("Location: http://php-ashliehorst.rhcloud.com/survey.php");
 exit;
 }
