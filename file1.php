@@ -43,10 +43,11 @@ function getSpecificScriptures($searchVariable){
 $conn = databaseConnection();
     
     try{
-        $sql = 'SELECT * FROM hobbies WHERE name = :name';
+
+        $sql = 'SELECT * FROM hobbies WHERE name LIKE :name';
         
         $stmt = $conn->prepare($sql);
-        $stmt->bindValue(':name', $searchVariable, PDO::PARAM_STR);
+        $stmt->bindValue(':name', '%' . $searchVariable . '%', PDO::PARAM_STR);
         $stmt->execute();
         $data = $stmt->fetchAll();
         $stmt->closeCursor();
