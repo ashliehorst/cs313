@@ -2,7 +2,7 @@
 if(!$_SESSION){
     session_start();
  }
-require $_SERVER['DOCUMENT_ROOT'].'/dataBase/practice2.php';
+require $_SERVER['DOCUMENT_ROOT'].'/dataBase/file1.php';
 if ($_POST['action'] == "Search" && !empty($_POST['search'])){
 	$searchVariable = $_POST['search'];
 	$scriptures = getSpecificScriptures($searchVariable);
