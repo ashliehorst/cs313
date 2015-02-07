@@ -18,7 +18,7 @@ function databaseConnection(){
             return FALSE;
         }
 }
-function getScriptures(){
+function getActivities(){
 $conn = databaseConnection();
     
     try{
@@ -39,7 +39,7 @@ $conn = databaseConnection();
             return FALSE;
         }
 }
-function getSpecificScriptures($searchVariable){
+function getSpecificActivity($searchVariable){
 $conn = databaseConnection();
     
     try{
