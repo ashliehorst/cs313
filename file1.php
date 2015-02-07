@@ -3,7 +3,7 @@ function databaseConnection(){
         $server = '127.4.54.130';
         $username = 'ashliehorst';
         $passwd = 'Soccermom1';
-        $database = 'hobbiesfun';
+        $database = 'hobbyfun';
         $dsn = "mysql:host=$server; dbname=$database";
         try{
             $dataConn = new PDO($dsn, $username, $passwd); //creates a PDO Object
