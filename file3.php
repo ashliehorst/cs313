@@ -10,7 +10,7 @@ if ($_POST['action'] == "Search" && !empty($_POST['search'])){
 	foreach ($scriptures as $value) {
 		$output .= "<b>$value[1] $value[2]:$value[3]</b> - <br /><br />";
 	}
-	include "view.php";
+	include "file2.php";
 	exit;
 }
 else {
@@ -19,6 +19,6 @@ else {
 	foreach ($scriptures as $value) {
 		$output .= "<b>$value[1] $value[2]:$value[3]</b> - <br /><br />";
 	}
-	include "view.php";
+	include "file2.php";
 	exit;
 }
