@@ -1,9 +1,9 @@
 <?php
 function databaseConnection(){
-        $server = '127.7.209.2';
-        $username = 'afane';
-        $passwd = 'rareriroru';
-        $database = 'php';
+        $server = '127.4.54.130';
+        $username = 'ashliehorst';
+        $passwd = 'Soccermom1';
+        $database = 'hobbiesfun';
         $dsn = "mysql:host=$server; dbname=$database";
         try{
             $dataConn = new PDO($dsn, $username, $passwd); //creates a PDO Object
@@ -22,7 +22,7 @@ function getScriptures(){
 $conn = databaseConnection();
     
     try{
-        $sql = 'SELECT * FROM products';
+        $sql = 'SELECT * FROM hobbies';
         
         $stmt = $conn->prepare($sql);
         $stmt->execute();
@@ -43,7 +43,7 @@ function getSpecificScriptures($searchVariable){
 $conn = databaseConnection();
     
     try{
-        $sql = 'SELECT * FROM products WHERE name = :name';
+        $sql = 'SELECT * FROM hobbies WHERE name = :name';
         
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(':name', $searchVariable, PDO::PARAM_STR);
