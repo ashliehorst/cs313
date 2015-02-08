@@ -45,7 +45,7 @@
       </article>
 
       <aside id="sidebar">
-        <h1></h1><h1></h1>
+        <h1>hi</h1><h1>dode</h1>
         <figure class="centered">
           <img src="tech.jpg"  alt=""/>
           <figcaption>Connect with people like you!</figcaption>
