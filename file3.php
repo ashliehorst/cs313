@@ -10,7 +10,7 @@ if ($_POST['action'] == "Search" && !empty($_POST['search'])){
 	foreach ($activities as $value) {
 		$output .= "$value[1] <br />";
 	}
-	include "file2.php";
+//	include "file2.php";
 	exit;
 }
 else {
@@ -19,6 +19,6 @@ else {
 	foreach ($activities as $value) {
 		$output .= "$value[1] <br />";
 	}
-	include "file2.php";
+//	include "file2.php";
 	exit;
 }
