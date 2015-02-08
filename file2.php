@@ -22,12 +22,17 @@
         </nav>
       </header>
 
+	<div id = "here">
         <article>
           <h2>Be Inspired</h2>
           <p>Organize your hobbies and 
 		  find fun activities to go to!</p>
-
+		  	 <form action="file3.php" method="POST" accept-charset="utf-8">
+		<input type="submit" id="submit" name="action" value="Search">
+		<input type="text" name="search" placeholder="Search for Activities" value="<?php echo $searchName;?>"/>
+	  </form>
         </article>
+        </div>
 
       <article id="main">
         <h2>Socializing, Activities, and Hobbies</h2>
