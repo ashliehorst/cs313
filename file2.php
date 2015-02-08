@@ -22,11 +22,14 @@
         </nav>
       </header>
 
-      <div id="here">
         <article>
           <h2>Be Inspired</h2>
           <p>Organize your hobbies and 
 		  find fun activities to go to!</p>
+		<form action="file3.php" method="POST" accept-charset="utf-8">
+		<input type="submit" id="submit" name="action" value="Search">
+		<input type="text" name="search" placeholder="Search for Activities" value="<?php echo $searchName;?>"/>
+	</form>
 
         </article>
       </div>
@@ -48,18 +51,14 @@
           <figcaption>Connect with people like you!</figcaption>
         </figure>
       </aside>
-
+      
+	 <br />
+	
+	<?php echo $output; ?> 
+	
       <footer>
         <p>&copy; Hobbies and Fun, Inc.</p>
       </footer>
-
-	 <br />
-	 
-	<form action="file3.php" method="POST" accept-charset="utf-8">
-		<input type="submit" id="submit" name="action" value="Search">
-		<input type="text" name="search" placeholder="Search for Activities" value="<?php echo $searchName;?>"/>
-	</form>
-	<?php echo $output; ?> 
 
 </body>
 </html>
