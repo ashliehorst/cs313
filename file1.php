@@ -44,7 +44,7 @@ $conn = databaseConnection();
     
     try{
 
-        $sql = 'SELECT * FROM activity WHERE hobbies LIKE :hobbies';
+        $sql = 'SELECT * FROM activity WHERE name LIKE :name';
         
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(':name', '%' . $searchVariable . '%', PDO::PARAM_STR);
