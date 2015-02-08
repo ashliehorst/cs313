@@ -25,9 +25,7 @@
 	<div id = "here">
         <article>
           <h2>Be Inspired</h2>
-          <p>Organize your hobbies and 
-		  find fun activities to go to!</p>
-		  	 <form action="file3.php" method="POST" accept-charset="utf-8">
+		<form action="file3.php" method="POST" accept-charset="utf-8">
 		<input type="submit" id="submit" name="action" value="Search">
 		<input type="text" name="search" placeholder="Search for Activities" value="<?php echo $searchName;?>"/>
 	  </form>
@@ -49,6 +47,8 @@
         <figure class="centered">
           <img src="tech.jpg"  alt=""/>
           <figcaption>Connect with people like you!</figcaption>
+          <p>Organize your hobbies and 
+		  find fun activities to go to!</p>
         </figure>
       </aside>
       
