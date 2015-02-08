@@ -6,9 +6,9 @@ require $_SERVER['DOCUMENT_ROOT'].'file1.php';
 if ($_POST['action'] == "Search" && !empty($_POST['search'])){
 	$searchVariable = $_POST['search'];
 	$activities = getSpecificActivity($searchVariable);
-	$output = "<hr/><br/><h1>Activities</h1>";
+	$output = " <div id="wrapper"><br/><h1>Activities</h1>";
 	foreach ($activities as $value) {
-		$output .= "<h2>$value[1]</h2> <p>Date: $value[3]</p><br />";
+		$output .= "<h2>$value[1]</h2> <p>Date: $value[3]</p><br /></div>";
 	}
 	include "file2.php";
 	exit;
