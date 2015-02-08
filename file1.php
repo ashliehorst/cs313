@@ -22,7 +22,7 @@ function getActivities(){
 $conn = databaseConnection();
     
     try{
-        $sql = 'SELECT * FROM hobbies';
+        $sql = 'SELECT * FROM activity';
         
         $stmt = $conn->prepare($sql);
         $stmt->execute();
@@ -44,7 +44,7 @@ $conn = databaseConnection();
     
     try{
 
-        $sql = 'SELECT * FROM hobbies WHERE name LIKE :name';
+        $sql = 'SELECT * FROM activity WHERE hobbies LIKE :name';
         
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(':name', '%' . $searchVariable . '%', PDO::PARAM_STR);
@@ -53,7 +53,7 @@ $conn = databaseConnection();
         $stmt->closeCursor();
             
     } catch (PDOException $ex) {
-        echo 'getScriptures error';
+        echo 'Error';
     }
         if(is_array($data)){
             return $data;
