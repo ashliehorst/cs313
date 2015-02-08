@@ -45,7 +45,7 @@
       </article>
 
       <aside id="sidebar">
-        <h2>Request Photographs</h2>
+        <h1></h1><h1></h1>
         <figure class="centered">
           <img src="tech.jpg"  alt=""/>
           <figcaption>Connect with people like you!</figcaption>
