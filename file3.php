@@ -23,13 +23,7 @@
       </header>
 
 	 <br />
-	 
-	<?php echo $output; ?> 
-	
-      <footer>
-        <p>&copy; Hobbies and Fun, Inc.</p>
-      </footer>
-      
+
       <?php
 if(!$_SESSION){
     session_start();
@@ -56,6 +50,14 @@ else {
 }
 
 ?>
+
+	 
+	<?php echo $output; ?> 
+	
+      <footer>
+        <p>&copy; Hobbies and Fun, Inc.</p>
+      </footer>
+      
 
 </body>
 </html>
