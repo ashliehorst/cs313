@@ -13,10 +13,10 @@
         <h1>Hobbies and Fun</h1>
         <nav id="mainnav">
           <ul>
-            <li><a href="assign04.html" class="thispage">Home</a></li>
-            <li><a href="assign041.html">Request Form</a></li>
-            <li><a href="assign042.html">Gallery</a></li>
-            <li><a href="../../assign02.html">CS213 Assignments</a></li>
+            <li><a href="index.html" class="thispage">Home</a></li>
+            <li><a href= "assignments.html">Assignments</a></li>
+            <li><a href="http://www.notsoboringlife.com/list-of-hobbies/">Hobby List</a></li>
+            <li><a href="https://www.linkedin.com/">Linked In</a></li>
             <li></li>
           </ul>
         </nav>
