@@ -8,7 +8,7 @@ if ($_POST['action'] == "Search" && !empty($_POST['search'])){
 	$activities = getSpecificActivity($searchVariable);
 	$output = "<hr/><br/><h1>Activities</h1>";
 	foreach ($activities as $value) {
-		$output .= "<div><p> Event: <b> $value[1] </b></p> <p>Date: $value[3]</p><br /></div>";
+		$output .= "<h2>$value[1]</h2> <p>Date: $value[3]</p><br />";
 	}
 	include "file2.php";
 	exit;
