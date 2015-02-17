@@ -13,10 +13,10 @@
         <h1>Hobbies and Fun</h1>
         <nav id="mainnav">
           <ul>
-            <li><a href="index.html" class="thispage">Home</a></li>
-            <li><a href= "assignments.html">Assignments</a></li>
-            <li><a href="http://www.notsoboringlife.com/list-of-hobbies/">Hobby List</a></li>
-            <li><a href="https://www.linkedin.com/">Linked In</a></li>
+            <li><a href="file2.php" class="thispage">Home</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="hobbies.php">Hobby List</a></li>
+            <li><a href="activity.php">Make Activity</a></li>
             <li></li>
           </ul>
         </nav>
@@ -28,7 +28,7 @@
           <p></p>
 		<form action="file3.php" method="POST" accept-charset="utf-8">
 		<input type="submit" id="submit" name="action" value="Search">
-		<input type="text" name="search" placeholder="Search for Activities" value="<?php echo $searchName;?>"/>
+		<input type="text" name="search" placeholder="Search Activities by Hobby" value=""/>
 	  </form>
 	  <p></p>
         </article>
@@ -55,8 +55,6 @@
       </aside>
       
 	 <br />
-	 
-	<?php echo $output; ?> 
 	
       <footer>
         <p>&copy; Hobbies and Fun, Inc.</p>
