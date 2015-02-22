@@ -11,17 +11,6 @@
 </head>
 
 <body>
-<?php
-/**********************************************************
-* We will use tables: user_hobby to display user's hobbies,
-* user_activity to display activities they have made
-* and user to display their information
-* All display, no input
-*
-* Right now this is not specific to any one user.
-* IT WILL DISPLAY ALL INFORMATION!!!
-***********************************************************/
-?>
     <div id="wrapper">
       <header id="top">
         <h1>Profile</h1>
@@ -41,15 +30,11 @@
 <form id="mainForm" action="insertTopic.php" method="POST">
 
 <?php
-// This section will now generate the available check boxes for topics
-// based on what is in the database
 
-
-// It would be better to store these in a different file
-$dbUser = 'root';
-$dbPass = 'root';
+$dbUser = 'ashliehorst';
+$dbPass = 'Soccermom1';
 $dbName = 'hobbyfun';
-$dbHost = 'localhost'; // for my configuration, I need this rather than 'localhost'
+$dbHost = '127.4.54.130'; 
 
 try
 {
