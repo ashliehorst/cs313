@@ -18,10 +18,10 @@ echo "actName=$actName\n";
 echo "date=$date\n";
 echo "hobby=$hobby\n";
 
-$dbUser = 'root';
-$dbPass = 'root';
+$dbUser = 'ashliehorst';
+$dbPass = 'Soccermom1';
 $dbName = 'hobbyfun';
-$dbHost = 'localhost'; 
+$dbHost = '127.4.54.130'; 
 
 try
 {
