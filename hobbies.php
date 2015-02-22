@@ -28,10 +28,10 @@
 
 <?php
 
-$dbUser = 'root';
-$dbPass = 'root';
+$dbUser = 'ashliehorst';
+$dbPass = 'Soccermom1';
 $dbName = 'hobbyfun';
-$dbHost = 'localhost'; // for my configuration, I need this rather than 'localhost'
+$dbHost = '127.4.54.130'; 
 
 try
 {
