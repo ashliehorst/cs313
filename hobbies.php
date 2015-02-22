@@ -27,15 +27,11 @@
 <form action="updateHobbies.php" method="POST">
 
 <?php
-// This section will now generate the available check boxes for topics
-// based on what is in the database
 
-
-// It would be better to store these in a different file
-$dbUser = 'ashliehorst';
-$dbPass = 'Soccermom1';
+$dbUser = 'root';
+$dbPass = 'root';
 $dbName = 'hobbyfun';
-$dbHost = '127.4.54.130'; 
+$dbHost = 'localhost'; // for my configuration, I need this rather than 'localhost'
 
 try
 {

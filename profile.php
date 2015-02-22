@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,10 +46,10 @@
 
 
 // It would be better to store these in a different file
-$dbUser = 'ashliehorst';
-$dbPass = 'Soccermom1';
+$dbUser = 'root';
+$dbPass = 'root';
 $dbName = 'hobbyfun';
-$dbHost = '127.4.54.130'; // for my configuration, I need this rather than 'localhost'
+$dbHost = 'localhost'; // for my configuration, I need this rather than 'localhost'
 
 try
 {
@@ -54,20 +57,14 @@ try
 	$db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
 
 	// prepare the statement
-	$statement = $db->prepare('SELECT name FROM user');
-	$statement->execute();
-	echo "<p>Hello ";
-	// Go through each result
-	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	{
-		echo $row['name'];
-	}
-	echo "!</p>";
+	$user_name = $_SESSION['username'];
+	echo "<p>Hello " . $user_name . "!</p>";
 
 	// prepare the statement
-	$statement = $db->prepare('SELECT * FROM user_activity ua
+	$statement = $db->prepare("SELECT * FROM user_activity ua
 				JOIN activity a ON ua.activity = a.activity_id
-				JOIN user u ON ua.user = u.user_id');
+				JOIN user u ON ua.user = u.user_id
+				WHERE user_name = '$user_name'");
 	$statement->execute();
 	echo "<p>Your Activities:</p>";
 	// Go through each result
@@ -77,9 +74,10 @@ try
 	}
 	
 	// prepare the statement
-	$statement = $db->prepare('SELECT * FROM user_hobby uh
+	$statement = $db->prepare("SELECT * FROM user_hobby uh
 				JOIN hobbies h ON uh.hobbies = h.hobby_id
-				JOIN user u ON uh.user = u.user_id');
+				JOIN user u ON uh.user = u.user_id
+				WHERE user_name = '$user_name'");
 	$statement->execute();
 	echo "<p>Your Hobbies:</p>";
 	// Go through each result

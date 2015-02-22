@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +12,21 @@
 </head>
 
 <body>
+
     <div id="wrapper">
       <header id="top">
         <h1>Hobbies and Fun</h1>
+		<?php
+			if (isset($_SESSION['username'])) {
+				$username = $_SESSION['username'];
+				echo "Hi " . $username . " ";
+				echo "Welcome Back!";	
+			}
+			else {
+				echo "Hello! Welcome to Hobby Fun!";
+			}
+		?>
+		  <li> <a href="logout.php/?action=logout">Logout</a></li>
         <nav id="mainnav">
           <ul>
             <li><a href="file2.php" class="thispage">Home</a></li>

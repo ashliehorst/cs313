@@ -37,10 +37,9 @@
 if(!$_SESSION){
     session_start();
  }
-
-        $server = '127.4.54.130';
-        $username = 'ashliehorst';
-        $passwd = 'Soccermom1';
+        $server = 'localhost';
+        $username = 'root';
+        $passwd = 'root';
         $database = 'hobbyfun';
         $dsn = "mysql:host=$server; dbname=$database";
         try{
@@ -48,23 +47,19 @@ if(!$_SESSION){
         } catch (PDOException $exc) {
                 echo "<p>An error occurred while connecting to the database</p>";
         }
-
 if ($_POST['action'] == "Search" && !empty($_POST['search'])){
 	$searchVariable = $_POST['search'];
 	 try{
-
         $sql = 'SELECT * FROM activity a 
 				JOIN location l ON a.location = l.location_id
 				JOIN hobbies h ON a.hobbies = h.hobby_id WHERE hobby_name LIKE :name';  			   
         $stmt = $db->prepare($sql);
         $stmt->bindValue(':name', '%' . $searchVariable . '%', PDO::PARAM_STR);
         $stmt->execute();
-
            
     } catch (PDOException $ex) {
         echo 'Error';
     }
-
 	while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 	{
 	    echo "<h2>" . $row['activity_name'] 
@@ -78,22 +73,18 @@ else {
         $sql = 'SELECT * FROM activity a 
 				JOIN location l ON a.location = l.location_id
 				JOIN hobbies h ON a.hobbies = h.hobby_id';
-
         $stmt = $db->prepare($sql);
         $stmt->execute();
-
 	while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 	{
 	    echo "<h2>" . $row['activity_name'] 
 		     . "</h2> <p>Location: " . $row['location_name'] . "<br/>" . $row['street'] . "<br/>" . $row['city'] . ", " . $row['state'] 
 		     . "<p>Date: " .  $row['date'] . "<br/>Hobbies: " . $row['hobby_name'] . "</p><br />";
 	}
-
             
     } catch (PDOException $ex) {
         echo 'Could not access Activities';
     }
-
 }
 ?>
 
