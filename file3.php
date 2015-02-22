@@ -37,10 +37,10 @@
 if(!$_SESSION){
     session_start();
  }
-        $server = 'localhost';
-        $username = 'root';
-        $passwd = 'root';
-        $database = 'hobbyfun';
+$server = '127.4.54.130';
+$username = 'ashliehorst';
+$passwd = 'Soccermom1';
+$database = 'hobbyfun';
         $dsn = "mysql:host=$server; dbname=$database";
         try{
             $db = new PDO($dsn, $username, $passwd); //creates a PDO Object
