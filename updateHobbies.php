@@ -2,10 +2,10 @@
 
 session_start();
 
-$dbUser = 'root';
-$dbPass = 'root';
+$dbUser = 'ashliehorst';
+$dbPass = 'Soccermom1';
 $dbName = 'hobbyfun';
-$dbHost = 'localhost'; 
+$dbHost = '127.4.54.130'; 
 
 require('connect.php');
 
